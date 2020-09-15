@@ -4,6 +4,7 @@
 #include "stdafx.h"
 #include <iostream>
 using namespace std;
+1//
 
 int _tmain(int argc, _TCHAR* argv[])
 {
