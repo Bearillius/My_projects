@@ -16,9 +16,9 @@ struct TWorker {
 int _tmain(int argc, _TCHAR* argv[])
 {
 	
-	TWorker staff[5];
+	TWorker staff[3];
 	
-	for (int i=0; i<5; i++){
+	for (int i=0; i<3; i++){
 		cout<<"Enter worker name:";
 		cin>>staff[i].name;
 		cout<<"Enter worker code:";
@@ -42,20 +42,19 @@ int _tmain(int argc, _TCHAR* argv[])
 	cout<<"Worker name = "<<name<<endl;
 		
 		
-	TWorker worker = {"Ivanov", 4563, 7567.95};
+	/*TWorker worker = {"Ivanov", 4563, 7567.95};
 	cout<<"Worker name:"<<worker.name<<endl;
 	cout<<"Worker code:"<<worker.code<<endl;
 	cout<<"Worker salary:"<<worker.salary<<endl;
 
-
-	TWorker worker2;
+	*/TWorker worker2;
 	cout<<"Enter worker name:";
 		cin>>worker2.name;
 	cout<<"Enter worker code:";
 	cin>>worker2.code;
 	cout<<"Enter worker salary:";
 	cin>>worker2.salary;
-		
+	
 	
 
 
