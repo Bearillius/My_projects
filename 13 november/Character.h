@@ -1,5 +1,7 @@
 class TCharacter{
-int health, power;
+
+	int health, power;
+
 public:
 	TCharacter(int he = 100, int pow = 10){
 		health = he; power = pow;

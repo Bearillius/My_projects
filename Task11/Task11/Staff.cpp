@@ -11,8 +11,9 @@ void TStaff::Create(){
 void TStaff::Add(){
 	TWorker* pv = new TWorker;
 	pv->EnterWorkerInfo();
-	pEnd->pNext = pv;
-	pv->pPrev = pEnd;
+
+	pEnd->setPNext(pv);
+	pv->setPPrev(pEnd);
 
 	pEnd = pv;
 }
@@ -28,11 +29,11 @@ void TStaff::Insert(int key){
 			TWorker* pv = new TWorker;
 			pv->EnterWorkerInfo();
 
-			pv->pNext = pCurrent->pNext;
-			pv->pPrev = pCurrent;
+			pv->setPNext(pCurrent->getPNext);
+			pv->setPPrev(pCurrent);
 
-			(pCurrent -> pNext) ->pPrev = pv;
-			pCurrent->pNext = pv;
+			(pCurrent -> getPNext) ->pPrev(pv);
+			pCurrent->getPNext = pv;
 		}
 	}
 }
@@ -42,16 +43,17 @@ void TStaff::Delete(int key){
 	if(pCurrent)
 	{
 		if(pCurrent == pBegin){
-			(pBegin->pNext)->pPrev = NULL;
-			pBegin = pBegin->pNext;
+			(pBegin->getPNext())->setPPrev(NULL);
+			pBegin = pBegin->getPNext();
 				}
+
 		else if(pCurrent == pEnd){
-			(pEnd->pPrev)->pNext = NULL;
-			pEnd = pEnd->pPrev;
+			(pEnd->getPPrev())->setPNext = NULL;
+			pEnd = pEnd->getPPrev();
 					}
 		else {
-			(pCurrent->pPrev)->pNext = pCurrent->pNext;
-			(pCurrent->pNext)->pPrev = pCurrent->pPrev;
+			(pCurrent->getPPrev())->setPNext = pCurrent->setPNext;
+			(pCurrent->getPNext)->pPrev = pCurrent->setPPrev;
 		}
 		delete pCurrent;
 	}
@@ -59,8 +61,8 @@ void TStaff::Delete(int key){
 
  TWorker* TStaff::Find(int key){
 	TWorker* tmp = pBegin;
-	while (tmp != NULL && tmp->code != key){
-		tmp = tmp->pNext;
+	while (tmp != NULL && tmp->getCode != key){
+		tmp = tmp->getPNext;
 	}
 	return tmp;
 }
@@ -71,25 +73,25 @@ void TStaff::Delete(int key){
 	 TWorker* pv = pBegin;
 	 while(pv){
 		 pv->PrintWorkerInfo();
-		 pv = pv->pNext;
+		 pv = pv->getPNext;
 	 }
  }
 
  
 TWorker* TStaff::GetMaxSalary() {
 	int index = 0;
-	float max_salary = pBegin->salary;
+	float max_salary = pBegin->getSalary;
 	TWorker* pv = pBegin;
 	TWorker* result = pBegin;
 
 	while (pv){
 
-		if (pv->salary > max_salary) {
-			max_salary = pv ->salary;
+		if (pv->getSalary > max_salary) {
+			max_salary = pv ->getSalary;
 			result = pv;
 
 			}
-		pv = pv->pNext;
+		pv = pv->getPNext;
 	}
 
 	return result;

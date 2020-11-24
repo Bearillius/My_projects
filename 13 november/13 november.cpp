@@ -1,11 +1,10 @@
 #include "stdafx.h"
-#include "Character.h"
-
-
-
+#include "TSmartCharacter.h"
 
 int _tmain(int argc, _TCHAR* argv[])
 {
+	TSmartCharacter SmartCharachter;
+	SmartCharachter.draw(10, 2, 15);
 	TCharacter character;
 	TCharacter* character2 = new TCharacter(20,50);
 
@@ -15,4 +14,3 @@ int _tmain(int argc, _TCHAR* argv[])
 	cout << character2->get_health()<<endl;
 	cout << character2->get_power()<<endl;
 }
-

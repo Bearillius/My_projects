@@ -3,8 +3,8 @@
 
 
 void TCharacter ::draw(int x, int y, int scale, int position){
-cout <<"GO TO";
-}
+	cout<<"!";
+};
+
 int TCharacter ::get_health(){return this -> health;};
 int TCharacter::get_power(){return this -> power;};
-	
