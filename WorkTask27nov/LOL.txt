@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+
+void couts(){
+cout<<"File open...";
+}
+
+int main(){
+couts();
+return 0;
+}
