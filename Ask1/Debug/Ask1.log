@@ -1,0 +1,12 @@
+﻿Build started 08.12.2020 20:48:13.
+     1>Project "C:\Project\Ask1\Ask1.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\Ask1.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Ask1.cpp
+         Ask1.cpp
+     1>c:\project\ask1\ask1.cpp(29): error C4700: uninitialized local variable 'x2' used
+     1>c:\project\ask1\ask1.cpp(29): error C4700: uninitialized local variable 'x1' used
+     1>Done Building Project "C:\Project\Ask1\Ask1.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.82

@@ -1,0 +1,28 @@
+﻿Build started 04.12.2020 20:16:18.
+     1>Project "C:\Project\WorkTask16\WorkTask16.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\WorkTask16.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Interface.cpp Staff.cpp WorkTask16.cpp Worker.cpp
+         Worker.cpp
+     1>c:\project\worktask16\worker.cpp(1): warning C4627: '#include "Worker.h"': skipped when looking for precompiled header use
+                 Add directive to 'stdafx.h' or rebuild precompiled header
+     1>c:\project\worktask16\worker.cpp(17): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "stdafx.h"' to your source?
+         WorkTask16.cpp
+     1>c:\project\worktask16\worktask16.cpp(1): warning C4627: '#include "Interface.h"': skipped when looking for precompiled header use
+                 Add directive to 'stdafx.h' or rebuild precompiled header
+     1>c:\project\worktask16\worktask16.cpp(10): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "stdafx.h"' to your source?
+         Staff.cpp
+     1>c:\project\worktask16\staff.cpp(1): warning C4627: '#include "Staff.h"': skipped when looking for precompiled header use
+                 Add directive to 'stdafx.h' or rebuild precompiled header
+     1>c:\project\worktask16\staff.cpp(101): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "stdafx.h"' to your source?
+         Interface.cpp
+     1>c:\project\worktask16\interface.cpp(1): warning C4627: '#include "Interface.h"': skipped when looking for precompiled header use
+                 Add directive to 'stdafx.h' or rebuild precompiled header
+     1>c:\project\worktask16\interface.cpp(2): warning C4627: '#include "Worker.h"': skipped when looking for precompiled header use
+                 Add directive to 'stdafx.h' or rebuild precompiled header
+     1>c:\project\worktask16\interface.cpp(104): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "stdafx.h"' to your source?
+         Generating Code...
+     1>Done Building Project "C:\Project\WorkTask16\WorkTask16.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.26
