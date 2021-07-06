@@ -1,0 +1,2 @@
+C:\Work\ConsoleApplication1\k_lemeshko\ExamTask4\Debug\ExamTask4.exe
+C:\Work\ConsoleApplication1\k_lemeshko\ExamTask4\Debug\ExamTask4.pdb

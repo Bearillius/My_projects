@@ -1,58 +1,55 @@
-#include "stdafx.h"
-#include <iostream> 
-
+п»ї#include <iostream> 
 using namespace std;
 
-void Enter(int **num, int con) {
-	for (int i = 0; i < con; i++){
-	cout << "Enter numbers: " << endl;
-	cin >> *num[i];
-	}
+int Enter(int *num) {
+        for (int i = 0; i < 4; i++) {
+        cout << "Enter numbers: " << endl;
+        cin >> num[i];
+    }
+        cout << '\n';
+    return *num;
 }
 
-int biMin(int num1, int num2)
-{
-	if (num1 > num2) return num2;
-
-	else return num1;
+void biMin(int* num) {
+    int i = 0, j;
+    do {
+        j = i + 1;
+        if (num[i] > num[j]) {
+            cout << num[j] << endl;
+        }
+        else {
+            cout << num[i] << endl;
+        }
+        i++;
+    } while (i < 3);
 }
-
-
-int FindMin(int* num) {
-	int tmp;
-	for (int i = 0; i<4; i++){
-		 tmp = biMin(num[i], num[i+1]);
-		 cout << tmp << endl;
-	}
-}
-
-
-int Menu(int** num) {
-    int n = 0;
+                         
+void Menu(int* num) {
+    int m = 0;
     cout << "1 - Find min" << endl;
-    cout << "2 -Выйти" << endl;
-    cin >> n;
-    switch (n)
+    cout << "2 - Exit" << endl;
+    cin >> m;
+    switch (m)
     {
     case 1:
     {
         Enter(num);
-        FindMin(num);
+        biMin(num);
+        system("pause");
         break;
     };
 
+    system("pause");
+
     case 2:
     {
-		break;
+        break;
     };
     }
 }
 
-   
-
 int main()
 {
-	int* num = new int[4];
-
-	Menu(&num);
+    int* num = new int[4];
+        Menu(num);
 }

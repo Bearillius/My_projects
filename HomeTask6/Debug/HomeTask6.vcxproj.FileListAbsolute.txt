@@ -1,0 +1,2 @@
+C:\Work\ConsoleApplication1\k_lemeshko\HomeTask6\Debug\HomeTask6.exe
+C:\Work\ConsoleApplication1\k_lemeshko\HomeTask6\Debug\HomeTask6.pdb

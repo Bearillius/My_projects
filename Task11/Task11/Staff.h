@@ -1,18 +1,17 @@
 #include "Worker.h"
 
-class TStaff {
-private:
-     TWorker*pBegin;
+struct TStaff {
+
+    TWorker*pBegin;
      TWorker*pEnd;
 
-public:
-	TStaff(){pBegin = NULL; pEnd = NULL;}
+	 TStaff(){pBegin = NULL; pEnd = NULL;}
 
 	 ~TStaff(){
 		 if(pBegin != NULL) delete pBegin;
 		 if(pEnd != NULL) delete pEnd;
 	 }
-
+	
 	void Create();
 	void Add();
 	void Insert(int key);
@@ -23,6 +22,4 @@ public:
 
 	TWorker* GetMaxSalary();
 
-	TWorker* getPBegin() {return pBegin;}
-	TWorker* getPEnd() {return pEnd;}
 }

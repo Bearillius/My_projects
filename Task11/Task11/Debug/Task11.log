@@ -1,10 +1,9 @@
-﻿Build started 24.11.2020 20:38:09.
+﻿Build started 10.11.2020 20:28:17.
      1>Project "C:\MyTasks\Clone\testproject\Task11\Task11\Task11.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\Task11.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Interface.cpp Staff.cpp Task11.cpp Worker.cpp
+         Worker.cpp
          Task11.cpp
-     1>c:\mytasks\clone\testproject\task11\task11\worker.h(28): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : see declaration of 'strcpy'
      1>c:\mytasks\clone\testproject\task11\task11\interface.h(3): error C2628: 'TStaff' followed by 'int' is illegal (did you forget a ';'?)
      1>c:\mytasks\clone\testproject\task11\task11\task11.cpp(10): error C2678: binary '!=' : no operator found which takes a left-hand operand of type 'TStaff' (or there is no acceptable conversion)
                  c:\program files (x86)\microsoft visual studio 11.0\vc\include\exception(522): could be 'bool std::operator !=(const std::exception_ptr &,const std::exception_ptr &)'
@@ -14,60 +13,20 @@
                  c:\program files (x86)\microsoft visual studio 11.0\vc\include\system_error(450): or       'bool std::operator !=(const std::error_condition &,const std::error_code &) throw()'
                  while trying to match the argument list '(TStaff, int)'
          Staff.cpp
-     1>c:\mytasks\clone\testproject\task11\task11\worker.h(28): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : see declaration of 'strcpy'
      1>c:\mytasks\clone\testproject\task11\task11\staff.cpp(4): error C2628: 'TStaff' followed by 'void' is illegal (did you forget a ';'?)
      1>c:\mytasks\clone\testproject\task11\task11\staff.cpp(4): error C2556: 'TStaff TStaff::Create(void)' : overloaded function differs only by return type from 'void TStaff::Create(void)'
-                 c:\mytasks\clone\testproject\task11\task11\staff.h(16) : see declaration of 'TStaff::Create'
+                 c:\mytasks\clone\testproject\task11\task11\staff.h(15) : see declaration of 'TStaff::Create'
      1>c:\mytasks\clone\testproject\task11\task11\staff.cpp(4): error C2371: 'TStaff::Create' : redefinition; different basic types
-                 c:\mytasks\clone\testproject\task11\task11\staff.h(16) : see declaration of 'TStaff::Create'
-     1>c:\mytasks\clone\testproject\task11\task11\staff.cpp(32): error C3867: 'TWorker::getPNext': function call missing argument list; use '&TWorker::getPNext' to create a pointer to member
-     1>c:\mytasks\clone\testproject\task11\task11\staff.cpp(35): error C2227: left of '->pPrev' must point to class/struct/union/generic type
-     1>c:\mytasks\clone\testproject\task11\task11\staff.cpp(36): error C2659: '=' : function as left operand
-     1>c:\mytasks\clone\testproject\task11\task11\staff.cpp(51): error C2659: '=' : function as left operand
-     1>c:\mytasks\clone\testproject\task11\task11\staff.cpp(55): error C3867: 'TWorker::setPNext': function call missing argument list; use '&TWorker::setPNext' to create a pointer to member
-     1>c:\mytasks\clone\testproject\task11\task11\staff.cpp(55): error C2659: '=' : function as left operand
-     1>c:\mytasks\clone\testproject\task11\task11\staff.cpp(56): error C2227: left of '->pPrev' must point to class/struct/union/generic type
-     1>c:\mytasks\clone\testproject\task11\task11\staff.cpp(64): error C3867: 'TWorker::getCode': function call missing argument list; use '&TWorker::getCode' to create a pointer to member
-     1>c:\mytasks\clone\testproject\task11\task11\staff.cpp(64): error C2446: '!=' : no conversion from 'int' to 'int (__thiscall TWorker::* )(void)'
-                 There are no conversions from integral values to pointer-to-member values
-     1>c:\mytasks\clone\testproject\task11\task11\staff.cpp(64): error C2040: '!=' : 'int (__thiscall TWorker::* )(void)' differs in levels of indirection from 'int'
-     1>c:\mytasks\clone\testproject\task11\task11\staff.cpp(65): error C3867: 'TWorker::getPNext': function call missing argument list; use '&TWorker::getPNext' to create a pointer to member
-     1>c:\mytasks\clone\testproject\task11\task11\staff.cpp(65): error C2440: '=' : cannot convert from 'TWorker *(__thiscall TWorker::* )(void)' to 'TWorker *'
-                 There is no context in which this conversion is possible
-     1>c:\mytasks\clone\testproject\task11\task11\staff.cpp(76): error C3867: 'TWorker::getPNext': function call missing argument list; use '&TWorker::getPNext' to create a pointer to member
-     1>c:\mytasks\clone\testproject\task11\task11\staff.cpp(76): error C2440: '=' : cannot convert from 'TWorker *(__thiscall TWorker::* )(void)' to 'TWorker *'
-                 There is no context in which this conversion is possible
-     1>c:\mytasks\clone\testproject\task11\task11\staff.cpp(83): error C3867: 'TWorker::getSalary': function call missing argument list; use '&TWorker::getSalary' to create a pointer to member
-     1>c:\mytasks\clone\testproject\task11\task11\staff.cpp(89): error C3867: 'TWorker::getSalary': function call missing argument list; use '&TWorker::getSalary' to create a pointer to member
-     1>c:\mytasks\clone\testproject\task11\task11\staff.cpp(89): error C2446: '>' : no conversion from 'float' to 'float (__thiscall TWorker::* )(void)'
-                 There is no context in which this conversion is possible
-     1>c:\mytasks\clone\testproject\task11\task11\staff.cpp(89): error C2296: '>' : illegal, left operand has type 'float (__thiscall TWorker::* )(void)'
-     1>c:\mytasks\clone\testproject\task11\task11\staff.cpp(90): error C3867: 'TWorker::getSalary': function call missing argument list; use '&TWorker::getSalary' to create a pointer to member
-     1>c:\mytasks\clone\testproject\task11\task11\staff.cpp(90): error C2440: '=' : cannot convert from 'float (__thiscall TWorker::* )(void)' to 'float'
-                 There is no context in which this conversion is possible
-     1>c:\mytasks\clone\testproject\task11\task11\staff.cpp(94): error C3867: 'TWorker::getPNext': function call missing argument list; use '&TWorker::getPNext' to create a pointer to member
-     1>c:\mytasks\clone\testproject\task11\task11\staff.cpp(94): error C2440: '=' : cannot convert from 'TWorker *(__thiscall TWorker::* )(void)' to 'TWorker *'
-                 There is no context in which this conversion is possible
+                 c:\mytasks\clone\testproject\task11\task11\staff.h(15) : see declaration of 'TStaff::Create'
          Interface.cpp
-     1>c:\mytasks\clone\testproject\task11\task11\worker.h(28): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : see declaration of 'strcpy'
      1>c:\mytasks\clone\testproject\task11\task11\interface.h(3): error C2628: 'TStaff' followed by 'int' is illegal (did you forget a ';'?)
      1>c:\mytasks\clone\testproject\task11\task11\interface.cpp(4): error C2556: 'int MainMenu(TStaff &)' : overloaded function differs only by return type from 'TStaff MainMenu(TStaff &)'
                  c:\mytasks\clone\testproject\task11\task11\interface.h(3) : see declaration of 'MainMenu'
      1>c:\mytasks\clone\testproject\task11\task11\interface.cpp(4): error C2371: 'MainMenu' : redefinition; different basic types
                  c:\mytasks\clone\testproject\task11\task11\interface.h(3) : see declaration of 'MainMenu'
-     1>c:\mytasks\clone\testproject\task11\task11\interface.cpp(15): error C2248: 'TStaff::pBegin' : cannot access private member declared in class 'TStaff'
-                 c:\mytasks\clone\testproject\task11\task11\staff.h(5) : see declaration of 'TStaff::pBegin'
-                 c:\mytasks\clone\testproject\task11\task11\staff.h(3) : see declaration of 'TStaff'
-         Generating Code...
-         Compiling...
-         Worker.cpp
-     1>c:\mytasks\clone\testproject\task11\task11\worker.h(28): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : see declaration of 'strcpy'
          Generating Code...
      1>Done Building Project "C:\MyTasks\Clone\testproject\Task11\Task11\Task11.vcxproj" (Build target(s)) -- FAILED.
 
 Build FAILED.
 
-Time Elapsed 00:00:00.78
+Time Elapsed 00:00:00.81

@@ -1,0 +1,4 @@
+﻿  ExamTask4.cpp
+C:\Work\ConsoleApplication1\k_lemeshko\ExamTask4\ExamTask4.cpp(28,12): warning C4156: удаление массива без использования формы оператора "delete", предусмотренной для массива; подставлена предусмотренная форма оператора
+C:\Work\ConsoleApplication1\k_lemeshko\ExamTask4\ExamTask4.cpp(28,12): warning C4154: удаление массива; выполнено преобразование к указателю
+  ExamTask4.vcxproj -> C:\Work\ConsoleApplication1\k_lemeshko\ExamTask4\Debug\ExamTask4.exe
