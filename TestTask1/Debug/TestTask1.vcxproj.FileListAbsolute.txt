@@ -1,0 +1,2 @@
+C:\My_project\first-project\TestTask1\Debug\TestTask1.exe
+C:\My_project\first-project\TestTask1\Debug\TestTask1.pdb
